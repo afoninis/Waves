@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url(../img/bg.svg) no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+header {
+    height: 11vh;
+    display: grid;
+    align-items: center;
+}
+header .vector {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+header .vector img {
+    z-index: 1;
+    width: 100vw;
+    /* background: linear-gradient(#2C66B8, #592CB8); */
+}
+nav {
+    width: 75vw;
+    margin: 0 auto;
+    z-index: 2;
+}
+nav .left {
+    width: 8rem;
+    float: left;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    color: white;
+    text-transform: uppercase;
+}
+nav .left img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .left div:first-child {
+    margin-right: 0.15rem;
+}
+nav .right {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .right .item {
+    width: 6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+nav .right .item:last-child {
+    background-color: #8859EC;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5%;
+}
+nav .right .item .arrow {
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    height: 49vh;
+}
+main .left, main .right {
+    flex: 1;
+}
+main .left {
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .left .content p:first-child {
+    color: #BDBDBD;
+}
+main .left .content .big {
+    font-size: 3rem;
+    font-weight: 600;
+}
+main .left .content span {
+    font-family: 'Work Sans', sans-serif;
+    background: linear-gradient(45deg, #2C66B8, #8859EC);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+main .left .content p:last-child {
+    font-size: 1.2rem;
+}
+main .left .content p:last-child span {
+    font-family: 'Work Sans', sans-serif;
+    color: #8859EC;
+    font-size: 1.5rem;
+}
+main .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .right .content {
+    margin-left: -9vw;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .connections {
+    margin-top: -8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .connections img {
+    width: 70vw;
+    z-index: 2;
+}
+footer .vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+footer .vector img {
+    width: 100vw;
+    z-index: 1;
+}
